@@ -1,0 +1,154 @@
+/* ==========================================
+   Animations
+========================================== */
+
+/* Animated background */
+.gradient {
+    animation: gradientMove 18s ease infinite;
+    background-size: 300% 300%;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Fade in page */
+
+body {
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Floating background shapes */
+
+.shape {
+    position: absolute;
+    animation: float 10s ease-in-out infinite;
+}
+
+@keyframes float {
+
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-25px) rotate(8deg);
+    }
+
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+}
+
+/* Hero title */
+
+.hero h1 {
+    animation: titleIn 1s ease;
+}
+
+@keyframes titleIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Subtitle */
+
+.hero h2 {
+    animation: titleIn 1.25s ease;
+}
+
+/* Paragraph */
+
+.hero p {
+    animation: titleIn 1.5s ease;
+}
+
+/* Buttons */
+
+.buttons {
+    animation: titleIn 1.75s ease;
+}
+
+/* Navbar */
+
+header {
+    animation: slideTop 1s ease;
+}
+
+@keyframes slideTop {
+
+    from {
+        transform: translateY(-60px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Buttons */
+
+.primary,
+.secondary {
+    transition: transform .25s, box-shadow .25s, background .25s;
+}
+
+    .primary:hover {
+        transform: translateY(-6px) scale(1.05);
+        box-shadow: 0 0 40px rgba(0,170,255,.5);
+    }
+
+    .secondary:hover {
+        transform: translateY(-6px);
+    }
+
+/* Logo */
+
+.logo:hover {
+    animation: pulse .7s;
+}
+
+@keyframes pulse {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.08);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

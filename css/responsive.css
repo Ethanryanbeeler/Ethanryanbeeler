@@ -1,0 +1,125 @@
+/* ==========================================
+   Responsive Design
+========================================== */
+
+
+/* Tablets */
+
+@media (max-width: 1100px) {
+
+    header {
+        padding: 25px 35px;
+    }
+
+
+    nav {
+        gap: 25px;
+    }
+
+
+    .hero {
+        padding: 0 40px;
+    }
+
+
+    .left h1 {
+        font-size: 70px;
+        line-height: 75px;
+    }
+}
+
+
+
+/* Smaller tablets */
+
+@media (max-width: 850px) {
+
+
+    header {
+        position: relative;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    .hero {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 50px;
+        padding: 80px 25px;
+    }
+
+
+    .left,
+    .right {
+        width: 100%;
+    }
+
+
+        .left p {
+            margin: auto;
+        }
+
+
+    .buttons {
+        justify-content: center;
+    }
+}
+
+
+
+/* Phones */
+
+@media (max-width:600px) {
+
+
+    .logo {
+        font-size: 25px;
+    }
+
+
+    nav a {
+        font-size: 13px;
+    }
+
+
+    .small-title {
+        font-size: 15px;
+    }
+
+
+    .left h1 {
+        font-size: 48px;
+        line-height: 52px;
+    }
+
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+
+    .hero p {
+        font-size: 17px;
+        line-height: 28px;
+    }
+
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .primary,
+    .secondary {
+        width: 230px;
+    }
+}

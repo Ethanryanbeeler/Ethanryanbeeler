@@ -1,0 +1,272 @@
+/* =========================================
+   ETHANRB11 Portfolio
+   Fortnite-inspired (Original Design)
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: "Montserrat",sans-serif;
+    background: #071426;
+    color: white;
+}
+
+/* ============================= */
+
+body {
+    position: relative;
+}
+
+/* ============================= */
+/* BACKGROUND */
+/* ============================= */
+
+#background {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    z-index: -5;
+}
+
+.gradient {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 20% 30%,#2f8cff 0%,transparent 35%), radial-gradient(circle at 80% 20%,#00d4ff 0%,transparent 30%), radial-gradient(circle at 50% 100%,#004cff 0%,transparent 50%), linear-gradient(160deg,#04101d,#0d2546,#123c80);
+    background-size: 200% 200%;
+}
+
+/* ============================= */
+/* HEADER */
+/* ============================= */
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 70px;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+nav {
+    display: flex;
+    gap: 45px;
+}
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 15px;
+        transition: .25s;
+    }
+
+        nav a:hover {
+            color: #69b6ff;
+        }
+
+/* ============================= */
+/* HERO */
+/* ============================= */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+}
+
+.left {
+    width: 48%;
+}
+
+.small-title {
+    color: #74c7ff;
+    font-size: 20px;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+.left h1 {
+    font-size: 92px;
+    line-height: 90px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.left p {
+    font-size: 22px;
+    color: #d4e8ff;
+    max-width: 520px;
+    line-height: 38px;
+}
+
+/* ============================= */
+/* BUTTONS */
+/* ============================= */
+
+.buttons {
+    display: flex;
+    gap: 22px;
+    margin-top: 50px;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.primary {
+    background: #1f8fff;
+    color: white;
+    padding: 18px 42px;
+    font-size: 18px;
+    font-weight: 800;
+    border-radius: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 15px 45px rgba(0,120,255,.35);
+    transition: .25s;
+}
+
+    .primary:hover {
+        transform: translateY(-5px);
+    }
+
+.secondary {
+    background: rgba(255,255,255,.08);
+    border: 2px solid rgba(255,255,255,.15);
+    color: white;
+    padding: 18px 42px;
+    font-size: 18px;
+    border-radius: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    backdrop-filter: blur(18px);
+    transition: .25s;
+}
+
+    .secondary:hover {
+        transform: translateY(-5px);
+    }
+
+/* ============================= */
+/* CARD */
+/* ============================= */
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42%;
+}
+
+.card {
+    position: relative;
+    width: 480px;
+    height: 600px;
+    border-radius: 34px;
+    overflow: hidden;
+    background: linear-gradient(180deg, rgba(255,255,255,.10), rgba(255,255,255,.04));
+    border: 1px solid rgba(255,255,255,.18);
+    backdrop-filter: blur(30px);
+    box-shadow: 0 40px 100px rgba(0,0,0,.45);
+}
+
+.card-content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 45px;
+}
+
+.card h2 {
+    font-size: 56px;
+    font-weight: 900;
+    margin-bottom: 12px;
+}
+
+.card p {
+    font-size: 24px;
+    color: #d8ebff;
+    margin-bottom: 35px;
+}
+
+.card button {
+    background: #1b8dff;
+    color: white;
+    padding: 18px;
+    border-radius: 14px;
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+    width: 220px;
+}
+.grid{
+
+position:absolute;
+
+inset:0;
+
+background-image:
+linear-gradient(
+rgba(255,255,255,.05) 1px,
+transparent 1px
+),
+
+linear-gradient(
+90deg,
+rgba(255,255,255,.05) 1px,
+transparent 1px
+);
+
+background-size:
+60px 60px;
+
+mask-image:
+linear-gradient(
+to bottom,
+transparent,
+black,
+transparent
+);
+
+}
+
+
+.shapes{
+
+position:absolute;
+
+inset:0;
+
+background-image:url("../assets/svg/background-shapes.svg");
+
+background-size:cover;
+
+background-position:center;
+
+}
